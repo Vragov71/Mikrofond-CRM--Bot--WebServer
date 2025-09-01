@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 // Public route for health check
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+    res.send('CRM MiniBot API is running.');
 });
 
 
